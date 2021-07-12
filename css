@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>视频播放器</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="videoPlayer">
+			<div id="mainVideoScreen">
+				<video id="screen" src="./resource/1.mp4"></video>
+				<div id="videoPanel">
+					<ul class="ulButton">
+						<li class="liButton">
+							<button style="flex-grow: 1;" id="last" class="videoButton" onclick="getLast()">上一个</button>
+						</li>
+						<li class="liButton">
+							<button style="flex-grow: 1;" id="pause" class="videoButton" onclick="playOrPause()">播放</button>
+						</li>
+						<li class="liButton">
+							<button style="flex-grow: 1;" id="next" class="videoButton" onclick="getNext()">下一个</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
